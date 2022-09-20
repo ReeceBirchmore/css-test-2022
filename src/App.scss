@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  padding: 64px;
+  width: 70vw;
+  box-sizing: border-box;
+  font-family: "DINPro Regular";
+}
+
+@media (max-width: 1400px) {
+  .App {
+    text-align: center;
+    width: 100vw;
+    padding: 0;
+  }
+}
+
+hr {
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-family: "DINPro Bold";
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+}
+
+@font-face {
+  font-family: "DINPro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Bold"),
+    url("./Assets/fonts/DINProBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DINPro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Regular"),
+    url("./Assets/fonts/DINProRegular.otf") format("opentype");
+}

@@ -1,0 +1,121 @@
+.Section {
+  &-header {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+  }
+  &--icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+  }
+  &--goToLink {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.Homepage {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.News {
+  &-newsGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 770px) {
+  .News {
+    &-newsGrid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.Channel {
+  iframe {
+    width: 100%;
+  }
+
+  &-videoDetails {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 770px) {
+  .Channel {
+    &-videoDetails {
+      width: 100%;
+      text-align: left !important;
+      display: flex;
+      flex-direction: column;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.Artists {
+  display: flex;
+  flex-direction: row;
+
+  &-listGrid {
+    column-count: 3;
+    list-style: none;
+    width: 65%;
+
+    li {
+      text-align: left;
+      padding: 6px;
+      white-space: nowrap;
+      cursor: pointer;
+      width: 10px;
+    }
+  }
+
+  &-albumArt {
+    img {
+      padding: 24px;
+      width: 300px;
+    }
+  }
+  @media (max-width: 770px) {
+    &-listGrid {
+      column-count: 2;
+      list-style: none;
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &-listGrid {
+      column-count: 1;
+      list-style: none;
+      width: 65%;
+    }
+    &-albumArt {
+      img {
+        padding: 24px;
+        width: 150px;
+      }
+    }
+  }
+}

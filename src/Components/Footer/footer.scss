@@ -1,0 +1,57 @@
+.Footer {
+  background-color: rgb(66, 66, 66);
+  width: 100%;
+  text-align: left;
+  padding: 12px 24px 12px 24px;
+  box-sizing: border-box;
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  p {
+    color: white;
+    font-style: normal;
+  }
+
+  a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  span {
+    a {
+      font-size: larger;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    &-links {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+
+      span {
+        width: 50%;
+
+        a {
+          width: 100%;
+          margin-bottom: 12px;
+        }
+      }
+
+      span:nth-child(2) {
+        text-align: right;
+      }
+    }
+  }
+}

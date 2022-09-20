@@ -1,0 +1,42 @@
+.Carousel {
+  overflow: hidden;
+  width: 100%;
+
+  &-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  &-Carousel-details {
+    text-decoration: none;
+  }
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 6px;
+  box-sizing: border-box;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+
+  &--active {
+    background-color: rgb(255, 92, 92);
+  }
+}
